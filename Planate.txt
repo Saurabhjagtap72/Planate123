@@ -1,0 +1,49 @@
+Name = Saurabh Balaso Jagtap.
+Email = jagtapsaurabh1999@gmail.com
+Phoneno=8805710205.
+Collage name= SVPM  COE Mahegon baramti- pune
+
+
+
+
+
+class Planet {
+		String name;
+		String gas1;
+		String gas2;
+		String gas3;
+		int moons;
+		boolean rings;
+
+		Planet(){}
+		Planet(String name,String gas1,String gas2,String gas3,int moons,boolean rings)
+		{
+			this.name=name;
+			this.gas1=gas1;
+			this.gas2=gas2;
+			this.gas3=gas3;
+			this.moons=moons;
+			this.rings=rings;
+		}
+		public void displayPlanet()
+		{
+			System.out.println("Name:"+name);
+			System.out.println("Gases:");
+			System.out.println(gas1);
+			System.out.println(gas2);
+			System.out.println(gas3);
+			System.out.println("Moons:"+moons);
+			System.out.println("Rings:"+rings);
+		}
+	}
+public class PlanetDriver {
+public static void main(String[] args) {
+	Planet p1=new Planet("Mercury", null, null, null, 0, false);
+	Planet p2=new Planet("Venus", "Carbon Diaoxide", "Nitrogen", null, 0, false);
+	Planet p3=new Planet("Earth", "Nitrogen", "Oxygen", null, 1, false);
+	Planet p4=new Planet("Jupitor", "Hydrogen", "Helium",null, 79, true);
+	Planet p5=new Planet("Saturn", "Hydrogen", "Helium", null, 83, true);
+	Planet p6=new Planet("Uranus", "Hydrogen", "Helium", "Methane", 27, true);
+	p1.displayPlanet();
+}
+}
